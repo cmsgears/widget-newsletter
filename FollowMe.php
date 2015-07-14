@@ -6,7 +6,7 @@ use \Yii;
 use yii\base\Widget;
 use yii\base\InvalidConfigException;
 
-class FollowMe extends \cmsgears\core\common\widgets\BaseWidget {
+class FollowMe extends \cmsgears\core\common\base\Widget {
 
 	// Variables ---------------------------------------------------
 
