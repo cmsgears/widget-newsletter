@@ -12,9 +12,9 @@ class FollowMe extends \cmsgears\core\common\base\Widget {
 	// Variables ---------------------------------------------------
 
 	// Public Variables --------------------
-	
+
 	public $btnText	= "Follow Us";
-	
+
 	// Constructor and Initialisation ------------------------------
 
 	// yii\base\Object
@@ -23,7 +23,10 @@ class FollowMe extends \cmsgears\core\common\base\Widget {
 
         parent::init();
 
-		// Do init tasks
+		if( $this->loadAssets ) {
+
+			NewsletterAssetBundle::register( $this->getView() );
+		}
     }
 
 	// Instance Methods --------------------------------------------
