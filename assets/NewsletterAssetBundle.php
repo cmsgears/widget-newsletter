@@ -1,5 +1,5 @@
 <?php
-namespace cmsgears\widgets\newsletter;
+namespace cmsgears\widgets\newsletter\assets;
 
 // Yii Imports
 use yii\web\AssetBundle;

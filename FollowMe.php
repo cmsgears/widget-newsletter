@@ -7,6 +7,9 @@ use yii\helpers\Html;
 use yii\base\Widget;
 use yii\base\InvalidConfigException;
 
+// CMG Imports
+use cmsgears\widgets\newsletter\assets\NewsletterAssetBundle;
+
 class FollowMe extends \cmsgears\core\common\base\Widget {
 
 	// Variables ---------------------------------------------------
