@@ -4,11 +4,10 @@ namespace cmsgears\widgets\newsletter;
 // Yii Imports
 use \Yii;
 use yii\helpers\Html;
-use yii\base\Widget;
 use yii\base\InvalidConfigException;
 
 // CMG Imports
-use cmsgears\widgets\newsletter\assets\NewsletterAssetBundle;
+use cmsgears\widgets\newsletter\assets\NewsletterAssets;
 
 class FollowMe extends \cmsgears\core\common\base\Widget {
 
@@ -28,7 +27,7 @@ class FollowMe extends \cmsgears\core\common\base\Widget {
 
 		if( $this->loadAssets ) {
 
-			NewsletterAssetBundle::register( $this->getView() );
+			NewsletterAssets::register( $this->getView() );
 		}
     }
 
