@@ -24,11 +24,8 @@ class FollowMe extends \cmsgears\core\common\base\Widget {
     public function init() {
 
         parent::init();
-
-		if( $this->loadAssets ) {
-
-			NewsletterAssets::register( $this->getView() );
-		}
+		
+		// Do init tasks
     }
 
 	// Instance Methods --------------------------------------------
@@ -37,10 +34,22 @@ class FollowMe extends \cmsgears\core\common\base\Widget {
 
     public function run() {
 
-		$widgetHtml = $this->render( $this->template, [ 'btnText' => $this->btnText ] );
+		if( $this->loadAssets ) {
+
+			NewsletterAssets::register( $this->getView() );
+		}
+
+		$widgetHtml = $this->renderWidget();
 
 		return Html::tag( 'div', $widgetHtml, $this->options );
     }
+
+	public function renderWidget( $config = [] ) {
+
+		$widgetHtml = $this->render( $this->template, [ 'btnText' => $this->btnText ] );
+
+		return $widgetHtml;
+	}
 }
 
 ?>
