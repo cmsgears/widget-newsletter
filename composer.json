@@ -1,12 +1,12 @@
 {
 	"name": "cmsgears/widget-newsletter",
 	"description": "The Newsletter Widget for CMSGears allows site users to register to get news and updates.",
-	"homepage": "http://www.cmsgears.org",
+	"homepage": "https://www.cmsgears.org",
 	"type": "package",
 	"keywords": [ "yii2", "cmsgears", "widget", "newsletter" ],
-	"license": "GPLv3",
+	"license": "GPL-3.0-or-later",
 	"support": {
-		"resources": "http://www.cmsgears.org/"
+		"resources": "https://www.cmsgears.org/"
 	},
 	"autoload": {
 		"psr-4": {
@@ -14,6 +14,7 @@
 		}
 	},
     "require": {
-        "cmsgears/module-core": "*"
+        "cmsgears/module-core": "*",
+		"cmsgears/module-newsletter": "*"
     }
 }
