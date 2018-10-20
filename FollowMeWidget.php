@@ -36,7 +36,7 @@ class FollowMeWidget extends Widget {
 	public $ajaxUrl	= 'newsletter/site/sign-up'; // CMT App Request - Submit Path
 
 	// CMT JS Framework to handle ajax request
-	public $cmtApp			= 'site';
+	public $cmtApp			= 'core';
     public $cmtController	= 'default';
     public $cmtAction		= 'default';
 
