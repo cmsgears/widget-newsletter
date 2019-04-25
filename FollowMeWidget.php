@@ -12,10 +12,7 @@ namespace cmsgears\widgets\newsletter;
 // Yii Imports
 use yii\helpers\Html;
 
-// CMG Imports
-use cmsgears\core\common\base\Widget;
-
-class FollowMeWidget extends Widget {
+class FollowMeWidget extends \cmsgears\core\common\base\Widget {
 
 	// Variables ---------------------------------------------------
 

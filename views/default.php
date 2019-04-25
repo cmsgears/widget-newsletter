@@ -10,22 +10,19 @@ $cmtAction		= $widget->cmtAction;
 	<div class="max-area-cover spinner">
 		<div class="valign-center cmti cmti-2x cmti-spinner-1 spin"></div>
 	</div>
-
     <div class="frm-field">
 		<div class="frm-icon-element">
 			<i class="cmti cmti-at"></i>
-			<input type="text" name="Newsletter[email]" placeholder="Email *">
-			<span class="error" cmt-error="email"></span>
+			<input type="text" name="SignUpForm[email]" placeholder="Email *">
+			<span class="error" cmt-error="SignUpForm[email]"></span>
 		</div>
     </div>
-
 	<div class="frm-actions">
 		<input class="submit" type="submit" name="submit" value="<?= $btnText ?>">
 	</div>
-
     <div class="filler-height"></div>
 	<div class="message success"></div>
 	<div class="message warning"></div>
 	<div class="message error"></div>
-	<div class="filler-height"> </div>
+	<div class="filler-height"></div>
 </form>
