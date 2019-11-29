@@ -1,5 +1,6 @@
 <?php
-$btnText = $widget->btnText;
+$btnText	= $widget->btnText;
+$spinner	= $widget->spinner;
 
 $ajaxUrl		= $widget->ajaxUrl;
 $cmtApp			= $widget->cmtApp;
@@ -7,9 +8,13 @@ $cmtController	= $widget->cmtController;
 $cmtAction		= $widget->cmtAction;
 ?>
 <form class="form row max-cols-100" cmt-app="<?= $cmtApp ?>" cmt-controller="<?= $cmtController ?>" cmt-action="<?= $cmtAction ?>" action="<?= $ajaxUrl ?>">
-	<div class="max-area-cover spinner">
-		<div class="valign-center cmti cmti-2x cmti-spinner-1 spin"></div>
-	</div>
+	<?php if( isset( $spinner ) ) { ?>
+		<?php include $spinner; ?>
+	<?php } else { ?>
+		<div class="max-area-cover spinner">
+			<div class="valign-center cmti cmti-2x cmti-spinner-1 spin"></div>
+		</div>
+	<?php } ?>
     <div class="frm-field">
 		<div class="frm-icon-element">
 			<i class="cmti cmti-at"></i>

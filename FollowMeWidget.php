@@ -32,6 +32,9 @@ class FollowMeWidget extends \cmsgears\core\common\base\Widget {
 
 	public $ajaxUrl	= 'newsletter/site/sign-up'; // CMT App Request - Submit Path
 
+	// The path of the Spinner PHP
+	public $spinner;
+
 	// CMT JS Framework to handle ajax request
 	public $cmtApp			= 'core';
     public $cmtController	= 'default';
