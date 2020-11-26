@@ -8,13 +8,9 @@ $cmtController	= $widget->cmtController;
 $cmtAction		= $widget->cmtAction;
 ?>
 <form class="form row max-cols-100" cmt-app="<?= $cmtApp ?>" cmt-controller="<?= $cmtController ?>" cmt-action="<?= $cmtAction ?>" action="<?= $ajaxUrl ?>">
-	<?php if( isset( $spinner ) ) { ?>
-		<?php include $spinner; ?>
-	<?php } else { ?>
-		<div class="max-area-cover spinner">
-			<div class="valign-center cmti cmti-2x cmti-spinner-1 spin"></div>
-		</div>
-	<?php } ?>
+	<div class="max-area-cover spinner">
+		<div class="valign-center <?= $spinner ?> spin"></div>
+	</div>
     <div class="frm-field">
 		<div class="frm-icon-element">
 			<i class="cmti cmti-at"></i>

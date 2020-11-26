@@ -30,10 +30,11 @@ class FollowMeWidget extends \cmsgears\core\common\base\Widget {
 
     public $btnText	= "Join Us";
 
-	public $ajaxUrl	= 'newsletter/site/sign-up'; // CMT App Request - Submit Path
+	public $labels = false;
 
-	// The path of the Spinner PHP
-	public $spinner;
+	public $spinner = 'cmti cmti-3x cmti-spinner-10';
+
+	public $ajaxUrl	= 'newsletter/site/sign-up'; // CMT App Request - Submit Path
 
 	// CMT JS Framework to handle ajax request
 	public $cmtApp			= 'core';
