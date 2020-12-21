@@ -8,7 +8,7 @@ $cmtController	= $widget->cmtController;
 $cmtAction		= $widget->cmtAction;
 ?>
 <form class="form row max-cols-100" cmt-app="<?= $cmtApp ?>" cmt-controller="<?= $cmtController ?>" cmt-action="<?= $cmtAction ?>" action="<?= $ajaxUrl ?>">
-	<div class="max-area-cover spinner">
+	<div class="spinner max-area-cover bkg-transparent bkg-transparent-black">
 		<div class="valign-center <?= $spinner ?> spin"></div>
 	</div>
     <div class="frm-field">
