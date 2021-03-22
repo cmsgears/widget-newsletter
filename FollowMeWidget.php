@@ -12,10 +12,7 @@ namespace cmsgears\widgets\newsletter;
 // Yii Imports
 use yii\helpers\Html;
 
-// CMG Imports
-use cmsgears\core\common\base\Widget;
-
-class FollowMeWidget extends Widget {
+class FollowMeWidget extends \cmsgears\core\common\base\Widget {
 
 	// Variables ---------------------------------------------------
 
@@ -32,6 +29,10 @@ class FollowMeWidget extends Widget {
 	// Public -----------------
 
     public $btnText	= "Join Us";
+
+	public $labels = false;
+
+	public $spinner = 'cmti cmti-3x cmti-spinner-10';
 
 	public $ajaxUrl	= 'newsletter/site/sign-up'; // CMT App Request - Submit Path
 
